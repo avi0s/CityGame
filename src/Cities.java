@@ -27,7 +27,24 @@ public class Cities {
 	     imageLink = null;
 	     
 	    }
-	    
+	      public String getScrambledName()
+	    {
+	 
+	        String res = "";
+	        ArrayList<String> list = new ArrayList<String>(cityName.length());
+	        
+	       for(int i=0;i<cityName.length();i++)
+	       {
+	           list.add(cityName.substring(i,i+1));
+	       }
+	       int h = cityName.length();
+	       for (int r=h;r>0;r--)
+	      {
+	          int num = (int) (Math.random()*r);
+	          res +=list.remove(num);
+	      }
+	      return res;
+	    }
 	    public double getLat()
 	    {
 	        return latitude;
@@ -51,25 +68,6 @@ public class Cities {
 	    public String getName()
 	    {
 	        return cityName;
-	    }
-	    
-	    public String getScrambledName()
-	    {
-	 
-	        String res = "";
-	        ArrayList<String> list = new ArrayList<String>(cityName.length());
-	        
-	       for(int i=0;i<cityName.length();i++)
-	       {
-	           list.add(cityName.substring(i,i+1));
-	       }
-	       int h = cityName.length();
-	       for (int r=h;r>0;r--)
-	      {
-	          int num = (int) (Math.random()*r);
-	          res +=list.remove(num);
-	      }
-	      return res;
 	    }
 	    
 	    public static void main(String[] args)
