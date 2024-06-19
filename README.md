@@ -1,5 +1,5 @@
 # CityGame
-A City guessing game inspired by daily geography games. 
+A City guessing game made in Java swing, inspired by daily geography games. 
 Starts with obscure clues about a city, and gets progresively easier to win.
 
 Used GoogleMaps Static APIs for satellite imagery and streetview, OpenWeather for the live weather details, and Time.io for timezone info.
