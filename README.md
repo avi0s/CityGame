@@ -9,4 +9,5 @@ Used GoogleMaps Static APIs for satellite imagery and streetview, OpenWeather fo
 
 Example level 
 
+
 ![image](https://github.com/avi0s/CityGame/assets/172209182/e097494f-0b41-4d5d-babc-216ac96f4047)
